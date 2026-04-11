@@ -1,5 +1,5 @@
 ### 🔗 网站链接
-[「ChineseLitNotes：给中文系学生的电子口袋书」](https://wanshannnn.github.io/ChineseLitNotes/)
+[「ChineseLitNotes：给中文系学生的电子口袋书」](https://wissen-ws.github.io/ChineseLitNotes/)
 
 ### 👋 简介
 这主要是一个纯粹的文档网站，为忙于考试的中文系本科学生提供 easily available & portable 的复习笔记，同时也提供扩展性资料和交流区。

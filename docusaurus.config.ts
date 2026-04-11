@@ -10,12 +10,22 @@ const config: Config = {
   favicon: 'img/favicon.ico',
    */
 
-  url: 'https://wanshannnn.github.io',
+  url: 'https://wissen-ws.github.io',
   baseUrl: '/ChineseLitNotes',
 
-  organizationName: 'wanshannnn',
+  organizationName: 'wissen-ws',
   projectName: 'ChineseLitNotes',
 
+  // Giscus：https://giscus.app/zh-CN — 在仓库启用 Discussions 后生成配置，将 repoId、categoryId 填入下方
+  customFields: {
+    giscus: {
+      repo: 'wissen-ws/ChineseLitNotes',
+      repoId: 'R_kgDOMqEUTw',
+      category: 'General',
+      categoryId: 'DIC_kwDOMqEUT84C6maf',
+      theme: 'fro',
+    },
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -94,7 +104,7 @@ const config: Config = {
           label: '关于我们',
         },
         {
-          href: 'https://github.com/wanshannnn/ChineseLitNotes',
+          href: 'https://github.com/wissen-ws/ChineseLitNotes',
           label: 'GitHub',
           position: 'right',
         },

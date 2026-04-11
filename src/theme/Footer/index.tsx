@@ -13,14 +13,14 @@ const CustomFooter: React.FC = () => {
             <div className="footer-column">
                 <h3>社区</h3>
                 <ul>
-                    <li><a href="https://github.com/wanshannnn/ChineseLitNotes">Github</a></li>
+                    <li><a href="https://github.com/wissen-ws/ChineseLitNotes">Github</a></li>
                     <li><a href="https://discord.com/channels/1320711800542462026/1320713881496326247">Discord</a></li>
                 </ul>
             </div>
             <div className="footer-column">
                 <h3>更多</h3>
                 <ul>
-                    <li><a href="https://x.com/wanshannnn">X</a></li>
+                    <li><a href="https://x.com/wissen_ws">X</a></li>
                 </ul>
             </div>
             <div style={{margin: 0}}>
