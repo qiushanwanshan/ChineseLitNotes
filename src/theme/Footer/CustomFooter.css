@@ -36,8 +36,16 @@
     text-decoration: underline;
 }
 
+.footer-busuanzi {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    gap: 10px;
+}
+
 .footer-copyright {
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 @media (max-width: 768px) {

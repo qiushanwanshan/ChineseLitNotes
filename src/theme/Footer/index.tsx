@@ -23,8 +23,12 @@ const CustomFooter: React.FC = () => {
                     <li><a href="https://x.com/wissen_ws">X</a></li>
                 </ul>
             </div>
-            <div style={{margin: 0}}>
+            <div className="footer-copyright" style={{margin: 0}}>
                 Copyright © {new Date().getFullYear()} ChineseLitNotes.
+            </div>
+            <div className="footer-busuanzi">
+                本站访问量 <span id="busuanzi_site_pv">加载中...</span> 次 丨
+                本页阅读量 <span id="busuanzi_page_pv">加载中...</span> 次
             </div>
         </footer>
     );
