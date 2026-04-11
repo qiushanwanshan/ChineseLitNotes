@@ -35,13 +35,6 @@ const config: Config = {
     locales: ['zh-Hans'],
   },
 
-  scripts: [
-    {
-      src: 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js',
-      defer: true,
-    },
-  ],
-
   presets: [
     [
       'classic',

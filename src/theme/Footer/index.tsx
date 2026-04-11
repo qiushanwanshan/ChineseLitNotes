@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './CustomFooter.css';
 
+const BUSUANZI_SRC = 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
+
+// 保证挂载后再加载busuanzi脚本计算浏览量
 const CustomFooter: React.FC = () => {
+    useEffect(() => {
+        if (document.querySelector(`script[src="${BUSUANZI_SRC}"]`)) {
+            return;
+        }
+        const script = document.createElement('script');
+        script.src = BUSUANZI_SRC;
+        script.async = false;
+        document.body.appendChild(script);
+    }, []);
+
     return (
         <footer style={{backgroundColor: '#333', padding: '1rem', color: '#fff', textAlign: 'center'}}>
             <div className="footer-column">
