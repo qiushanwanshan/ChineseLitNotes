@@ -1,27 +1,24 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useLocation} from '@docusaurus/router';
 import './CustomFooter.css';
 
 const BUSUANZI_API = 'https://cdn.busuanzi.cc/api.php';
 
-function applyBusuanziPayload(payload: Record<string, unknown>) {
-    for (const k of Object.keys(payload)) {
-        const value = payload[k];
-        document.querySelectorAll(`#${CSS.escape(k)}`).forEach((el) => {
-            el.textContent = value == null ? '' : String(value);
-        });
+function formatBusuanziField(value: unknown): string {
+    if (value == null) {
+        return '—';
     }
+    return String(value);
 }
 
 const CustomFooter: React.FC = () => {
     const location = useLocation();
+    const [sitePv, setSitePv] = useState('加载中...');
+    const [pagePv, setPagePv] = useState('加载中...');
 
     useEffect(() => {
         let cancelled = false;
-        const pageEl = document.getElementById('busuanzi_page_pv');
-        if (pageEl) {
-            pageEl.textContent = '加载中...';
-        }
+        setPagePv('加载中...');
 
         fetch(BUSUANZI_API, {
             method: 'POST',
@@ -36,9 +33,17 @@ const CustomFooter: React.FC = () => {
                 if (cancelled) {
                     return;
                 }
-                applyBusuanziPayload(data);
+                setSitePv(formatBusuanziField(data.busuanzi_site_pv));
+                setPagePv(formatBusuanziField(data.busuanzi_page_pv));
             })
-            .catch((e) => console.error(e));
+            .catch((e) => {
+                console.error(e);
+                if (cancelled) {
+                    return;
+                }
+                setPagePv('加载中...');
+                setSitePv('加载中...');
+            });
 
         return () => {
             cancelled = true;
@@ -70,8 +75,8 @@ const CustomFooter: React.FC = () => {
                 Copyright © {new Date().getFullYear()} ChineseLitNotes.
             </div>
             <div className="footer-busuanzi">
-                本站访问量 <span id="busuanzi_site_pv">加载中...</span> 次 丨
-                本页阅读量 <span id="busuanzi_page_pv">加载中...</span> 次
+                本站访问量 <span>{sitePv}</span> 次 丨
+                本页阅读量 <span>{pagePv}</span> 次
             </div>
         </footer>
     );
