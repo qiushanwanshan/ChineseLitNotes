@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import ViewCount from './ViewCount';
+import React from 'react';
 import './CustomFooter.css';
 
 const CustomFooter: React.FC = () => {
@@ -26,11 +25,6 @@ const CustomFooter: React.FC = () => {
             </div>
             <div style={{margin: 0}}>
                 Copyright © {new Date().getFullYear()} ChineseLitNotes.
-            </div>
-            <div id="footer-view-count">
-                {typeof window !== 'undefined' && (
-                    <ViewCount path={window.location.pathname} />
-                )}
             </div>
         </footer>
     );
