@@ -5,10 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'ChineseLitNotes',
   tagline: '给中文系学生的电子口袋书',
-  /*
-  项目图标，有待设计
-  favicon: 'img/favicon.ico',
-   */
+  favicon: 'img/logo.png',
 
   url: 'https://wissen-ws.github.io',
   baseUrl: '/ChineseLitNotes',
@@ -66,6 +63,10 @@ const config: Config = {
      */
     navbar: {
       title: 'ChineseLitNotes',
+      logo: {
+        alt: 'ChineseLitNotes Logo',
+        src: 'img/logo.png',
+      },
       items: [
         {
           type: 'docSidebar',
