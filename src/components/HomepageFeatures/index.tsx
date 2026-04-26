@@ -25,7 +25,7 @@ function Feature({title, description}: FeatureItem) {
     <div className={clsx('col col--12')}>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </div>
   );
