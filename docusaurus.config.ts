@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ChineseLitNotes',
-  tagline: '给中文系学生的电子口袋书',
-  favicon: 'img/logo.png',
+  title: '中文系考试Wiki',
+  tagline: '致力于成为一个面向中文系考试的知识站',
+  favicon: 'img/logo-mini.png',
 
   url: 'https://wissen-ws.github.io',
   baseUrl: '/ChineseLitNotes',
@@ -57,14 +57,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    /*
-    首页图片，有待设计
-    image: 'img/docusaurus-social-card.jpg',
-     */
+    image: 'img/background-image.jpeg',
     navbar: {
-      title: 'ChineseLitNotes',
+      title: '首页',
       logo: {
-        alt: 'ChineseLitNotes Logo',
+        alt: '中文系考试Wiki Logo',
         src: 'img/logo.png',
       },
       items: [
@@ -96,7 +93,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'Sidebar5',
           position: 'left',
-          label: '古代文学',
+          label: '唐宋文学',
         },
         {
           type: 'docSidebar',

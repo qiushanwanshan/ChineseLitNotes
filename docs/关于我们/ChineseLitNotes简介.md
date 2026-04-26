@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'ChineseLitNotes简介'
+sidebar_label: '中文系考试Wiki简介'
 sidebar_position: 1
 ---
 
