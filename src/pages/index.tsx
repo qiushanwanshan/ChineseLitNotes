@@ -20,7 +20,7 @@ function HomepageHeader() {
                 </Heading>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.heroButtonContainer}>
-                    <a href="https://wissen-ws.github.io/ChineseLitNotes/docs/现代文学/新文化运动与文学革命" className="button button--secondary button--lg">开始学习</a>
+                    <a href="https://wissensen.github.io/ChineseLitNotes/docs/现代文学/新文化运动与文学革命" className="button button--secondary button--lg">开始学习</a>
                 </div>
             </div>
         </header>

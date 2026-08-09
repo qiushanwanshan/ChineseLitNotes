@@ -4,19 +4,19 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '中文系考试Wiki',
-  tagline: '致力于成为一个面向中文系考试的知识站',
+  tagline: '面向中文系考试的知识站',
   favicon: 'img/logo-mini.png',
 
-  url: 'https://wissen-ws.github.io',
+  url: 'https://wissensen.github.io',
   baseUrl: '/ChineseLitNotes',
 
-  organizationName: 'wissen-ws',
+  organizationName: 'wissensen',
   projectName: 'ChineseLitNotes',
 
   // Giscus：https://giscus.app/zh-CN — 在仓库启用 Discussions 后生成配置，将 repoId、categoryId 填入下方
   customFields: {
     giscus: {
-      repo: 'wissen-ws/ChineseLitNotes',
+      repo: 'wissensen/ChineseLitNotes',
       repoId: 'R_kgDOMqEUTw',
       category: 'General',
       categoryId: 'DIC_kwDOMqEUT84C6maf',
@@ -93,16 +93,28 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'Sidebar5',
           position: 'left',
-          label: '唐宋文学',
+          label: '先秦文学',
         },
         {
           type: 'docSidebar',
           sidebarId: 'Sidebar6',
           position: 'left',
+          label: '唐宋文学',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'Sidebar7',
+          position: 'left',
+          label: '元明清文学',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'Sidebar8',
+          position: 'left',
           label: '关于我们',
         },
         {
-          href: 'https://github.com/wissen-ws/ChineseLitNotes',
+          href: 'https://github.com/wissensen/ChineseLitNotes',
           label: 'GitHub',
           position: 'right',
         },

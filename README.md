@@ -1,5 +1,5 @@
 ### 🔗 网站链接
-[「ChineseLitNotes：中文系考试Wiki」](https://wissen-ws.github.io/ChineseLitNotes/)
+[「ChineseLitNotes：中文系考试Wiki」](https://wissensen.github.io/ChineseLitNotes/)
 
 ### 👋 简介
 ChineseLitNotes 是一个纯粹的文档网站，为忙于考试的中文系学生提供 easily available & portable 的复习笔记。
