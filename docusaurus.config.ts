@@ -7,16 +7,16 @@ const config: Config = {
   tagline: '面向中文系考试的知识站',
   favicon: 'img/logo-mini.png',
 
-  url: 'https://wissensen.github.io',
+  url: 'https://qiushanwanshan.github.io',
   baseUrl: '/ChineseLitNotes',
 
-  organizationName: 'wissensen',
+  organizationName: 'qiushanwanshan',
   projectName: 'ChineseLitNotes',
 
   // Giscus：https://giscus.app/zh-CN — 在仓库启用 Discussions 后生成配置，将 repoId、categoryId 填入下方
   customFields: {
     giscus: {
-      repo: 'wissensen/ChineseLitNotes',
+      repo: 'qiushanwanshan/ChineseLitNotes',
       repoId: 'R_kgDOMqEUTw',
       category: 'General',
       categoryId: 'DIC_kwDOMqEUT84C6maf',
@@ -114,7 +114,7 @@ const config: Config = {
           label: '关于我们',
         },
         {
-          href: 'https://github.com/wissensen/ChineseLitNotes',
+          href: 'https://github.com/qiushanwanshan/ChineseLitNotes',
           label: 'GitHub',
           position: 'right',
         },
